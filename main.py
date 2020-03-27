@@ -41,6 +41,6 @@ while flag:
                 if lst_user_guess[i] not in guess_list_number:
                     guess_list_items.append("x")
 
-    print(guess_list_items)
+    print("the result for your guess is :  {}".format(guess_list_items) )
 
 
