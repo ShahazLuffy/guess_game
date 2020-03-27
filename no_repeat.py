@@ -1,5 +1,3 @@
-import random
-
 def check_guess_user(number):
     list_guess_check = [int(i) for i in str(number)]
     for i in range(len(str(number))):
@@ -8,7 +6,10 @@ def check_guess_user(number):
                 print("number {} is repeated, try again".format(list_guess_check[i]))
                 return False
     return True
+
+
 flag = True
+
 
 def check_guess_cpu(number):
     list_guess_check = [int(i) for i in str(number)]
@@ -17,6 +18,8 @@ def check_guess_cpu(number):
             if list_guess_check[i] == list_guess_check[j]:
                 return False
     return True
+
+
 flag = True
 
 
