@@ -9,8 +9,6 @@ while flag:
         continue
     flag = False
 flag = True
-print(guess)
-
 
 while flag:
     round_string = input(print("guess your 5 digit number? "))
@@ -25,8 +23,7 @@ while flag:
         continue
     lst_user_guess = [int(i) for i in str(user_guess)]
     lst_guess = [int(i) for i in str(guess)]
-    print(lst_user_guess)
-    print(lst_guess)
+
     if lst_user_guess == lst_guess:
         print("you won, the number was {}".format(guess))
         flag = False
