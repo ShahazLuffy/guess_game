@@ -1,5 +1,8 @@
 def check_guess_user(number):
     list_guess_check = [int(i) for i in str(number)]
+    if list_guess_check[0] == 0:
+        print('you can not have "0" as your first digit, your number will not be 5 digit value')
+        return False
     for i in range(len(str(number))):
         for j in range(i+1,len(str(number))):
             if list_guess_check[i] == list_guess_check[j]:
